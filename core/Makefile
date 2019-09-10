@@ -2252,6 +2252,9 @@ $(recovery_ramdisk): $(MKBOOTFS) $(COMPRESSION_COMMAND_DEPS) \
 # $(1): output file
 # $(2): kernel file
 define build-recoveryimage-target
+  @echo "Generating Changelog for ColtOS..."
+  $(hide) ./vendor/colt/tools/changelog.sh
+  $(hide) mv $(PRODUCT_OUT)/Changelog.txt $(PRODUCT_OUT)/$(TARGET_PRODUCT)-Changelog.txt
   $(if $(filter true,$(PRODUCT_SUPPORTS_VBOOT)), \
     $(MKBOOTIMG) --kernel $(2) $(INTERNAL_RECOVERYIMAGE_ARGS) \
                  $(INTERNAL_MKBOOTIMG_VERSION_ARGS) $(BOARD_RECOVERY_MKBOOTIMG_ARGS) \
