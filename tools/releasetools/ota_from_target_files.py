@@ -850,8 +850,8 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Print("**  \____/\___/|_|\__| \___/  \__/  **");
   script.Print("**                                  **");
   script.Print("**************************************");
-  script.Print("**    by Rakesh Batra (*TeamColt)   **");
-  script.Print("**         Android 10 Enjoy         **");
+  script.Print("**            by TeamColt           **");
+  script.Print("**          Enjoy Android R         **");
   script.Print("**************************************");
 
   coltversion = target_info.GetBuildProp("ro.colt.display.version")

@@ -5014,8 +5014,8 @@ colt: otapackage
 	@echo -e ${CL_RED}"*****************************************************************************************************************"${CL_RED}
 	@echo -e ${CL_RED}"*****************************************************************************************************************"${CL_RED}
 	@echo -e ${CL_RED}"                                        Thanks for Compiling ColtOS : Enjoy :)                                   "${CL_RED}
-	@echo -e ${CL_RED}"=================================================Package Complete================================================"${CL_RED}
-	@echo -e ${CL_RED}"                                         ColtOS by Rakesh Batra :: TeamColt                                      "${CL_RED}
+	@echo -e ${CL_RED}"=================================================Package Completed==============================================="${CL_RED}
+	@echo -e ${CL_RED}"                                         ColtOS brought to you by :: TeamColt                                    "${CL_RED}
 	@echo -e ${CL_YLW}"*****************************************************************************************************************"${CL_RED}
 	@echo -e ${CL_RED}"                                                                                                                 "${CL_RED}
 	@echo -e ${CL_BLD}${CL_YLW}"Zip: "${CL_YLW} $(COLT_TARGET_PACKAGE)${CL_YLW}
