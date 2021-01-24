@@ -819,17 +819,17 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   system_progress = 0.9 - (len(block_diff_dict) - 1) * 0.1
   script.Print("BackupTool Work Done");
 
-  script.Print("**************************************");
-  script.Print("**     ___      _ _       ___  __   **");
-  script.Print("**    / __\___ | | |_    /___\/ _\  **");
-  script.Print("**   / /  / _ \| | __|  //  //\ \   **");
-  script.Print("**  / /__| (_) | | |_  / \_// _\ \  **");
-  script.Print("**  \____/\___/|_|\__| \___/  \__/  **");
-  script.Print("**                                  **");
-  script.Print("**************************************");
-  script.Print("**            by TeamColt           **");
-  script.Print("**          Enjoy Android R         **");
-  script.Print("**************************************");
+  script.Print("=================================================");
+  script.Print("**           ___      _ _       ___  __        **");
+  script.Print("**          / __\___ | | |_    /___\/ _\       **");
+  script.Print("**         / /  / _ \| | __|  //  //\ \        **");
+  script.Print("**        / /__| (_) | | |_  / \_// _\ \       **");
+  script.Print("**        \____/\___/|_|\__| \___/  \__/       **");
+  script.Print("**                                             **");
+  script.Print("=================================================");
+  script.Print("**                  by TeamColt                **");
+  script.Print("**                Enjoy Android R              **");
+  script.Print("=================================================");
 
   androidver = target_info.GetBuildProp("ro.build.version.release")
   buildtype = target_info.GetBuildProp("ro.build.type")
@@ -839,7 +839,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   device = target_info.GetBuildProp("ro.product.name")
   manufacturer = target_info.GetBuildProp("ro.product.manufacturer")
 
-  script.Print("***********************************************");
+  script.Print("=================================================");
   script.Print(" Android version  : %s"%(androidver));
   script.Print("");
   script.Print(" Security patch   : %s"%(securep));
@@ -851,7 +851,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Print(" Device           : %s"%(device));
   script.Print("");
   script.Print(" Manufacturer     : %s"%(manufacturer));
-  script.Print("***********************************************");
+  script.Print("=================================================");
 
   if OPTIONS.wipe_user_data:
     system_progress -= 0.1
